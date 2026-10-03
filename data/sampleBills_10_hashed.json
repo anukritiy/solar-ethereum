@@ -1,0 +1,92 @@
+[
+  {
+    "billId": 1,
+    "consumerId": "CONS-1001",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 160,
+    "unitsConsumed": 266,
+    "amountPayable": 689,
+    "billHash": "0x4677337bc7df0125ea83d4fa658551c0ed0a8680a40f72fcf7ec4ba66f674890"
+  },
+  {
+    "billId": 2,
+    "consumerId": "CONS-1002",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 413,
+    "unitsConsumed": 349,
+    "amountPayable": -416,
+    "billHash": "0x41e3435e8ca2f3367da08c63d975e8a23f01d97daa40de236cd145b7ba1d9f55"
+  },
+  {
+    "billId": 3,
+    "consumerId": "CONS-1003",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 262,
+    "unitsConsumed": 168,
+    "amountPayable": -611,
+    "billHash": "0x708b6b5875b07c1d18660412449f5a23ed409cc7c980a5fd7ff6c8de7ae824c2"
+  },
+  {
+    "billId": 4,
+    "consumerId": "CONS-1004",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 588,
+    "unitsConsumed": 196,
+    "amountPayable": -2548,
+    "billHash": "0xe3837733d2c6200b4179318864790d38ad9be2d30657981a54a2efa476223582"
+  },
+  {
+    "billId": 5,
+    "consumerId": "CONS-1005",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 516,
+    "unitsConsumed": 361,
+    "amountPayable": -1007.5,
+    "billHash": "0xe3688db46cae797315868c9a6f6639904598f2d0d06180ccb5bd01f1a7cef753"
+  },
+  {
+    "billId": 6,
+    "consumerId": "CONS-1006",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 317,
+    "unitsConsumed": 309,
+    "amountPayable": -52,
+    "billHash": "0xd7b0ad968417e2f9ed2efd3109d7fdf851fa9c59c17360c46246b47a1c60c558"
+  },
+  {
+    "billId": 7,
+    "consumerId": "CONS-1007",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 466,
+    "unitsConsumed": 291,
+    "amountPayable": -1137.5,
+    "billHash": "0x1219e565c9b31ee6af21b60a6a21edf4a09d31b60903b267cc16ad27d90695e1"
+  },
+  {
+    "billId": 8,
+    "consumerId": "CONS-1008",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 178,
+    "unitsConsumed": 182,
+    "amountPayable": 26,
+    "billHash": "0xed05aeb53fedba0645e194c195c0150d3c3eb24c8c0534183ac5c396e5253e31"
+  },
+  {
+    "billId": 9,
+    "consumerId": "CONS-1009",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 373,
+    "unitsConsumed": 285,
+    "amountPayable": -572,
+    "billHash": "0x8cc981aed1dee356538d4c070919631fda2dc2bdc05152cd7a86ee22f12d6a76"
+  },
+  {
+    "billId": 10,
+    "consumerId": "CONS-1010",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 258,
+    "unitsConsumed": 354,
+    "amountPayable": 624,
+    "billHash": "0xe987b3fc7cc5f4c2c5247302fada6f799d34582110680af2d5db21a1aa303bba"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "billId": 1,
+    "consumerId": "CONS-1001",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 160,
+    "unitsConsumed": 266,
+    "amountPayable": 689
+  },
+  {
+    "billId": 2,
+    "consumerId": "CONS-1002",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 413,
+    "unitsConsumed": 349,
+    "amountPayable": -416
+  },
+  {
+    "billId": 3,
+    "consumerId": "CONS-1003",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 262,
+    "unitsConsumed": 168,
+    "amountPayable": -611
+  },
+  {
+    "billId": 4,
+    "consumerId": "CONS-1004",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 588,
+    "unitsConsumed": 196,
+    "amountPayable": -2548
+  },
+  {
+    "billId": 5,
+    "consumerId": "CONS-1005",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 516,
+    "unitsConsumed": 361,
+    "amountPayable": -1007.5
+  },
+  {
+    "billId": 6,
+    "consumerId": "CONS-1006",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 317,
+    "unitsConsumed": 309,
+    "amountPayable": -52
+  },
+  {
+    "billId": 7,
+    "consumerId": "CONS-1007",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 466,
+    "unitsConsumed": 291,
+    "amountPayable": -1137.5
+  },
+  {
+    "billId": 8,
+    "consumerId": "CONS-1008",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 178,
+    "unitsConsumed": 182,
+    "amountPayable": 26
+  },
+  {
+    "billId": 9,
+    "consumerId": "CONS-1009",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 373,
+    "unitsConsumed": 285,
+    "amountPayable": -572
+  },
+  {
+    "billId": 10,
+    "consumerId": "CONS-1010",
+    "billingPeriod": "2026-09",
+    "unitsGenerated": 258,
+    "unitsConsumed": 354,
+    "amountPayable": 624
+  }
+]

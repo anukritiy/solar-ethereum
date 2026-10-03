@@ -1,0 +1,49 @@
+{
+  "_format": "hh3-sol-build-info-1",
+  "id": "solc-0_8_34-9bf97905e02aaf9577c9a64c97c891697d19bc9a",
+  "solcVersion": "0.8.34",
+  "solcLongVersion": "0.8.34+commit.80d5c536",
+  "compilerType": "solc",
+  "toolVersions": {
+    "hardhat": "3.18.0"
+  },
+  "userSourceNameMap": {
+    "contracts/SolarBillAudit.sol": "project/contracts/SolarBillAudit.sol"
+  },
+  "input": {
+    "language": "Solidity",
+    "settings": {
+      "evmVersion": "osaka",
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "": [
+            "ast"
+          ],
+          "*": [
+            "abi",
+            "evm.bytecode.linkReferences",
+            "evm.bytecode.object",
+            "evm.bytecode.opcodes",
+            "evm.bytecode.sourceMap",
+            "evm.deployedBytecode.immutableReferences",
+            "evm.deployedBytecode.linkReferences",
+            "evm.deployedBytecode.object",
+            "evm.deployedBytecode.opcodes",
+            "evm.deployedBytecode.sourceMap",
+            "evm.methodIdentifiers"
+          ]
+        }
+      },
+      "remappings": []
+    },
+    "sources": {
+      "project/contracts/SolarBillAudit.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.28;\n\ncontract SolarBillAudit {\n    struct BillRecord {\n        string consumerId;\n        bytes32 billHash;\n        uint256 unitsGenerated;\n        uint256 unitsConsumed;\n        uint256 timestamp;\n        address submittedBy;\n    }\n\n    address public owner;\n    mapping(uint256 => BillRecord) public bills;\n    uint256 public billCount;\n\n    event BillRecorded(uint256 indexed billId, string consumerId, bytes32 billHash);\n\n    modifier onlyOwner() {\n        require(msg.sender == owner, \"Not authorized\");\n        _;\n    }\n\n    constructor() {\n        owner = msg.sender;\n    }\n\n    function submitBill(\n        string memory consumerId,\n        bytes32 billHash,\n        uint256 unitsGenerated,\n        uint256 unitsConsumed\n    ) public onlyOwner returns (uint256) {\n        billCount++;\n        bills[billCount] = BillRecord({\n            consumerId: consumerId,\n            billHash: billHash,\n            unitsGenerated: unitsGenerated,\n            unitsConsumed: unitsConsumed,\n            timestamp: block.timestamp,\n            submittedBy: msg.sender\n        });\n\n        emit BillRecorded(billCount, consumerId, billHash);\n        return billCount;\n    }\n\n    function verifyBill(uint256 billId, bytes32 hashToCheck) public view returns (bool) {\n        return bills[billId].billHash == hashToCheck;\n    }\n\n    function getBill(uint256 billId) public view returns (BillRecord memory) {\n        return bills[billId];\n    }\n}"
+      }
+    }
+  }
+}
